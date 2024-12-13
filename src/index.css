@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-blue-900 text-white font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white font-display;
+  }
+
+  p {
+    @apply text-gray-300;
+  }
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-blue-900/20 border border-white/10;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900;
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-blue-900/20;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-500/70;
+}
