@@ -48,7 +48,7 @@ const Header = () => {
               <a href="#experience" className="text-white hover:text-blue-400 transition-colors">Experience</a>
               <a href="#contact" className="text-white hover:text-blue-400 transition-colors">Contact</a>
               <a 
-                href="https://drive.google.com/file/d/1phuuGOlWzPBuRNC44CJ7s55WnDyajjck/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1ImG1Ibp6MM7JpHKC4lP_jdBGkFPzoQjn/view?usp=sharing" 
                 download 
                 className="flex items-center space-x-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 px-4 py-2 rounded-full backdrop-blur-sm border border-blue-400/20 transition-all w-fit"
               >
