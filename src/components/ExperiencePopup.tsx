@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
-import useSound from 'use-sound';
+// import useSound from 'use-sound';
 
 interface ExperiencePopupProps {
   isOpen: boolean;
@@ -13,17 +13,19 @@ interface ExperiencePopupProps {
 }
 
 const ExperiencePopup: React.FC<ExperiencePopupProps> = ({ isOpen, onClose, experience }) => {
-  const [playOpen] = useSound('/sounds/pop-up.mp3', { volume: 0.5 });
-  const [playClose] = useSound('/sounds/pop-down.mp3', { volume: 0.5 });
+  // const [playOpen] = useSound('/sounds/pop-up.mp3', { volume: 0.5 });
+  // const [playClose] = useSound('/sounds/pop-down.mp3', { volume: 0.5 });
 
   useEffect(() => {
     if (isOpen) {
-      playOpen();
+      // playOpen();
     }
-  }, [isOpen, playOpen]);
+  }, 
+  // [isOpen, playOpen]
+);
 
   const handleClose = () => {
-    playClose();
+    // playClose();
     onClose();
   };
 

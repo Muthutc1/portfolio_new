@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { ExternalLink, ChevronLeft, ChevronRight, Code2, Users, X, Globe, Phone, Lock } from 'lucide-react';
-import useSound from 'use-sound';
+// import useSound from 'use-sound';
 
 interface Project {
   title: string;
@@ -19,8 +19,8 @@ interface Project {
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [playOpen] = useSound('/sounds/pop-up.mp3', { volume: 0.5 });
-  const [playClose] = useSound('/sounds/pop-down.mp3', { volume: 0.5 });
+  // const [playOpen] = useSound('/sounds/pop-up.mp3', { volume: 0.5 });
+  // const [playClose] = useSound('/sounds/pop-down.mp3', { volume: 0.5 });
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: 'left' | 'right') => {
