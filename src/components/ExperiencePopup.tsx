@@ -18,19 +18,12 @@ const ExperiencePopup: React.FC<ExperiencePopupProps> = ({ isOpen, onClose, expe
 
   useEffect(() => {
     if (isOpen) {
-      // playOpen();
-    }
-  }, 
-  // [isOpen, playOpen]
-);
       //playOpen();
     }
-  }, [isOpen //playOpen
-
-  ]);
+  }, [isOpen]);
 
   const handleClose = () => {
-    // playClose();
+   // playClose();
     onClose();
   };
 
