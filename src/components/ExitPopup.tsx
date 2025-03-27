@@ -25,8 +25,8 @@ const ExitPopup: React.FC<ExitPopupProps> = ({ isOpen, onClose }) => {
             If the portfolio is not clear to you, you can download my resume instead. Hope you find some useful details in it. 😊
           </p>
           <a 
-            href="/resume.pdf" 
-            download 
+            href="https://drive.google.com/uc?export=download&id=1ImG1Ibp6MM7JpHKC4lP_jdBGkFPzoQjn" 
+            target='_blank' 
             className="inline-flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-sky-blue px-6 py-3 rounded-full backdrop-blur-sm border border-sky-blue/20 transition-all transform hover:scale-105"
           >
             <FileDown size={20} />

@@ -38,8 +38,8 @@ const Header = () => {
               </a>
             ))}
             <a 
-              href="/resume.pdf" 
-              download 
+              href="https://drive.google.com/uc?export=download&id=1ImG1Ibp6MM7JpHKC4lP_jdBGkFPzoQjn" 
+              target='_blank' 
               className="flex items-center space-x-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 px-4 py-2 rounded-full backdrop-blur-sm border border-blue-400/20 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-400/20 animate-pulse"
             >
               <FileDown size={18}/>
@@ -85,12 +85,12 @@ const Header = () => {
                 </a>
               ))}
               <a 
-                href="/resume.pdf" 
-                download 
+                href="https://drive.google.com/uc?export=download&id=1ImG1Ibp6MM7JpHKC4lP_jdBGkFPzoQjn" 
+              target='_blank'
                 className="flex items-center space-x-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 px-4 py-2 rounded-full backdrop-blur-sm border border-blue-400/20 transition-all duration-300 w-fit transform hover:scale-105 hover:translate-x-2 animate-fadeIn"
                 style={{ animationDelay: "500ms" }}
               >
-                <FileDown size={18} className="animate-bounce" />
+                <FileDown size={18} />
                 <span>Resume</span>
               </a>
             </div>
