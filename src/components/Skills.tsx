@@ -6,7 +6,7 @@ const Skills = () => {
     {
       title: "Frontend Development",
       icon: <LayoutDashboard className="w-8 h-8 text-blue-400" />,
-      skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "ASP.NET"]
+      skills: ["HTML", "CSS", "JavaScript", "React", "Angular"]
     },
     {
       title: "Mobile Development",
@@ -16,7 +16,7 @@ const Skills = () => {
     {
       title: "Backend Development",
       icon: <Server className="w-8 h-8 text-blue-400" />,
-      skills: [".NET Backend Development", "Node.js"]
+      skills: ["ASP.NET", "Node.js"]
     },
     {
       title: "Database & Cloud",
@@ -26,19 +26,19 @@ const Skills = () => {
     {
       title: "Version Control",
       icon: <GitBranch className="w-8 h-8 text-blue-400" />,
-      skills: ["Git"]
+      skills: ["Git", "Source Control"]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-dark-blue/40 backdrop-blur-md">
+    <section id="skills" className="py-20 bg-blue-900/40 backdrop-blur-md">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-white mb-12">Skills</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
-              className="bg-navy/30 backdrop-blur-md p-6 rounded-lg border border-white/10 hover:border-blue-400/30 transition-all transform hover:scale-105"
+              className="bg-blue-900/30 backdrop-blur-md p-6 rounded-lg border border-white/10 hover:border-blue-400/30 transition-all transform hover:scale-105"
             >
               <div className="flex items-center space-x-4 mb-6">
                 <div className="transform hover:rotate-12 transition-transform">
@@ -50,7 +50,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="bg-sky-blue/10 text-sky-blue px-3 py-1 rounded-full text-sm border border-sky-blue/20 hover:border-sky-blue/40 transition-all transform hover:scale-110"
+                    className="bg-blue-800/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-400/20 hover:border-blue-400/40 transition-all transform hover:scale-110"
                   >
                     {skill}
                   </span>
@@ -64,4 +64,5 @@ const Skills = () => {
   );
 };
 
-export default Skills
+
+export default Skills;
