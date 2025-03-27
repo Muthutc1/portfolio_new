@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { ExternalLink, ChevronLeft, ChevronRight, Code2, Users, X, Globe, Phone, Lock } from 'lucide-react';
 // import useSound from 'use-sound';
+//import useSound from 'use-sound';
 
 interface Project {
   title: string;
@@ -215,12 +216,12 @@ const Projects = () => {
   ];
 
   const handleProjectClick = (project: Project) => {
-    playOpen();
+    //playOpen();
     setSelectedProject(project);
   };
 
   const handleClosePopup = () => {
-    playClose();
+    //playClose();
     setSelectedProject(null);
   };
 
