@@ -211,7 +211,9 @@ const Projects = () => {
       type: "Enterprise Applications",
       tags: ["Enterprise", "Confidential", "Custom Solutions"],
       platforms: {},
-      details: []
+      details: [
+        "✌🏼😁 ➡ 💻⚙️"
+      ]
     }
   ];
 
