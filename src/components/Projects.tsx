@@ -342,16 +342,16 @@ const Projects = () => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-fadeIn" 
             onClick={handleClosePopup}
           />
-          <div className="glass-popup relative w-full max-w-2xl rounded-2xl p-8 animate-scaleIn">
+          <div className="glass-popup relative w-full max-w-2xl rounded-2xl p-6 animate-scaleIn">
             <button
               onClick={handleClosePopup}
-              className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors transform hover:rotate-90 duration-300"
+              className="sticky top-0 float-right text-white/70 hover:text-white transition-colors transform hover:rotate-90 duration-300"
             >
               <X size={24} />
             </button>
 
-            <div className="space-y-6">
-              <div className="relative aspect-video rounded-lg overflow-hidden">
+            <div className="space-y-4">
+              <div className="relative h-48 md:h-64 rounded-lg overflow-hidden">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
@@ -361,26 +361,26 @@ const Projects = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-white mb-2 animate-slideRight">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-2 animate-slideRight">
                   {selectedProject.title}
                 </h3>
-                <p className="text-gray-300 animate-slideRight" style={{ animationDelay: '100ms' }}>
+                <p className="text-gray-300 text-sm md:text-base animate-slideRight" style={{ animationDelay: '100ms' }}>
                   {selectedProject.description}
                 </p>
               </div>
 
-              <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-white animate-slideRight" style={{ animationDelay: '200ms' }}>
+              <div className="space-y-3">
+                <h4 className="text-base md:text-lg font-semibold text-white animate-slideRight" style={{ animationDelay: '200ms' }}>
                   Key Features
                 </h4>
                 <ul className="space-y-2">
                   {selectedProject.details.map((detail, index) => (
                     <li 
                       key={index} 
-                      className="flex items-center space-x-2 text-gray-300 animate-slideRight hover:text-white transition-colors"
+                      className="flex items-center space-x-2 text-gray-300 text-sm md:text-base animate-slideRight hover:text-white transition-colors"
                       style={{ animationDelay: `${300 + index * 100}ms` }}
                     >
-                      <span className="w-2 h-2 bg-sky-blue rounded-full animate-pulse" />
+                      <span className="w-1.5 h-1.5 bg-sky-blue rounded-full animate-pulse" />
                       <span>{detail}</span>
                     </li>
                   ))}
@@ -388,16 +388,16 @@ const Projects = () => {
               </div>
 
               {Object.keys(selectedProject.platforms).length > 0 && (
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3 pt-2">
                   {selectedProject.platforms.android && (
                     <a
                       href={selectedProject.platforms.android}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-blue/20 animate-fadeIn"
+                      className="flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-white px-3 py-1.5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-blue/20 animate-fadeIn text-sm"
                       style={{ animationDelay: '600ms' }}
                     >
-                      <Phone size={18} />
+                      <Phone size={16}/>
                       <span>Android App</span>
                     </a>
                   )}
@@ -406,10 +406,10 @@ const Projects = () => {
                       href={selectedProject.platforms.ios}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-blue/20 animate-fadeIn"
+                      className="flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-white px-3 py-1.5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-blue/20 animate-fadeIn text-sm"
                       style={{ animationDelay: '700ms' }}
                     >
-                      <Phone size={18}/>
+                      <Phone size={16} />
                       <span>iOS App</span>
                     </a>
                   )}
@@ -418,10 +418,10 @@ const Projects = () => {
                       href={selectedProject.platforms.web}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-blue/20 animate-fadeIn"
+                      className="flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-white px-3 py-1.5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-blue/20 animate-fadeIn text-sm"
                       style={{ animationDelay: '800ms' }}
                     >
-                      <Globe size={18} className="animate-spin-slow" />
+                      <Globe size={16} className="animate-spin-slow" />
                       <span>Visit Website</span>
                     </a>
                   )}
