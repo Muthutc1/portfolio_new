@@ -397,7 +397,7 @@ const Projects = () => {
                       className="flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-white px-3 py-1.5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-blue/20 animate-fadeIn text-sm"
                       style={{ animationDelay: '600ms' }}
                     >
-                      <Phone size={16}/>
+                      <Phone size={16} className="animate-  "/>
                       <span>Android App</span>
                     </a>
                   )}
@@ -409,7 +409,7 @@ const Projects = () => {
                       className="flex items-center space-x-2 bg-sky-blue/20 hover:bg-sky-blue/30 text-white px-3 py-1.5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sky-blue/20 animate-fadeIn text-sm"
                       style={{ animationDelay: '700ms' }}
                     >
-                      <Phone size={16} />
+                      <Phone size={16} className="animate-pulse"/>
                       <span>iOS App</span>
                     </a>
                   )}
