@@ -212,7 +212,7 @@ const Projects = () => {
       tags: ["Enterprise", "Confidential", "Custom Solutions"],
       platforms: {},
       details: [
-        "✌🏼😁 ➡ 💻⚙️"
+        " ✌🏼😁 ➡ 💻⚙️ "
       ]
     }
   ];
