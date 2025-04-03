@@ -28,7 +28,7 @@ const CustomPopup: React.FC<CustomPopupProps> = ({ isOpen, onClose }) => {
 
         <div className="text-center space-y-6">
           <div className="flex justify-center">
-            <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center animate-bounce">
+            <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center animate-ping">
               <Mail className="w-8 h-8 text-blue-300" />
             </div>
           </div>
