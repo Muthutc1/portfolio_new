@@ -6,12 +6,12 @@ const Skills = () => {
     {
       title: "Frontend Development",
       icon: <LayoutDashboard className="w-8 h-8 text-blue-400" />,
-      skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "ASP.NET"]
+      skills: ["HTML", "CSS", "JavaScript", "ASP.NET", ".NET MVC", "React", "Angular"]
     },
     {
       title: "Mobile Development",
       icon: <Smartphone className="w-8 h-8 text-blue-400" />,
-      skills: ["Xamarin", ".NET MAUI", "Android", "iOS"]
+      skills: ["Xamarin", ".NET MAUI", "Android", "iOS", "Flutter"]
     },
     {
       title: "Backend Development",

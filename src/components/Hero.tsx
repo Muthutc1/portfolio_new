@@ -60,15 +60,15 @@ const Hero = () => {
                 <div className="text-gray-300 space-y-4">
                   <p className="leading-relaxed group-hover:text-white transition-colors duration-500">
                     I'm a Software Developer with 6+ years of experience in mobile application development, 
-                    specializing in Android, iOS, and cross-platform frameworks like Xamarin and .NET MAUI.
+                    specializing in Android, iOS, and cross-platform frameworks like Xamarin, .NET MAUI, ASP.NET and .NET MVC.
                   </p>
                   <p className="leading-relaxed group-hover:text-white transition-colors duration-500">
-                    With solid skills in HTML, CSS, JavaScript, and frameworks like Angular and React, 
+                    With solid skills in HTML, CSS, JavaScript, and frameworks like Angular and React,
                     I have worked across diverse domains such as Healthcare, Finance, Cybersecurity, 
                     TV Game Apps, and Aviation.
                   </p>
                   <blockquote className="border-l-4 border-amber-400 pl-4 italic text-amber-400 transform transition-all duration-500 hover:scale-105 hover:border-amber-500">
-                    "Believe it! Never give up, because that is my ninja way!" - Naruto Uzumaki
+                    "Believe it! Never give up, because that is my ninja way!✌🏻" - Naruto Uzumaki
                   </blockquote>
                 </div>
               </div>
